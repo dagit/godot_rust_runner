@@ -10,8 +10,6 @@ func _enter_tree():
 	run_main_scene_button.tooltip_text = "Build Rust GDExtension and run game"
 	run_main_scene_button.pressed.connect(_on_run_main_scene_pressed)
 	
-	add_control_to_container(CONTAINER_TOOLBAR, run_main_scene_button)
-
 	run_current_scene_button = Button.new()
 	run_current_scene_button.text = "▶️ Run Scene"
 	run_current_scene_button.tooltip_text = "Build Rust GDExtension and run scene"
